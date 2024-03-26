@@ -2,7 +2,7 @@
 
 This repository is the official implementation of the following paper.
 
-Paper title: [Limiting microcracks and hydrogen permeability in thermoplastic composites for LH2 storage](DOI will follow once thesis is uploaded to TU Delft repository)
+Paper title: [Limiting microcracks and hydrogen permeability in thermoplastic composites for LH2 storage](http://resolver.tudelft.nl/uuid:40c562f9-6d65-4a84-8bed-498ae828d8dd)
 
 
 
@@ -16,7 +16,7 @@ As a delamination is an inter-ply failure mode, XFEM cannot be used solely here?
 
 Abaqus is chosen as the software to create the model because Abaqus provides the option to use Python scripting? python is therefore used to create the input file for the analysis. Within the mesoscale model, the section that is used for the finite element analysis is 10 x 10 mm with ply thicknesses dependent on the different testcases, but maximized at a total laminate thickness of 2.38 mm (23 plies). The model is specific for TC1225
 
-Caveats and assumptions: Model is not suitable for cryogenic cycling, the enrichment mesh generation distance is assumed, ‘beta’ for the in-situ shear strength is assumed, permeability is only implemented by means of Darcy’s law, DSMC method for flow mechanism is not implemented yet. 
+Caveats and assumptions: Model is not suitable for cryogenic cycling, the enrichment mesh generation distance is assumed, â€˜betaâ€™ for the in-situ shear strength is assumed, permeability is only implemented by means of Darcyâ€™s law, DSMC method for flow mechanism is not implemented yet. 
 
 After the Abaqus model is generated, the following steps should still be implemented to use the Abaqus results in a second part of the Python code:
 1. Read nodal connectivity from mesh. 
